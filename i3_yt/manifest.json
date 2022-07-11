@@ -1,0 +1,16 @@
+{
+	"name": "i3_yt",
+	"version": "1.0.0",
+	"description": "hide cursor on youtube video element for fullscreen mode",
+	"manifest_version": 2,
+	"author": "Evan O'Brien",
+	"browser_action": {
+		"default_title": "i3_yt"
+	},
+	"content_scripts": [
+		{
+			"matches": ["*://*.youtube.com/*"],
+			"js": ["script.js"]
+		}
+	]
+}
