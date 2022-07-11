@@ -1,4 +1,4 @@
-var vidCont = document.querySelector(".html5-video-container");
+var vidCont = document.querySelector('video');
 var hideDone = false;
 var able_id;
 var hide_id;
