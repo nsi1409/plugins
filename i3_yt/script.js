@@ -31,8 +31,10 @@ function unhide() {
 	hideDone = false;
 }
 
-//vidCont.addEventListener('mouseover', hideTime);
-//vidCont.addEventListener('mouseout', unhide);
-vidCont.addEventListener('mousemove', hideTime);
+if(vidCont != null) {
+	vidCont.addEventListener('mouseover', hideTime);
+	vidCont.addEventListener('mouseout', unhide);
+	vidCont.addEventListener('mousemove', hideTime);
+} 
 
 
