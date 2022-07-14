@@ -2,9 +2,9 @@
 	"name": "scrollbar_block",
 	"version": "1.0.0",
 	"description": "hide scrollbar",
-	"manifest_version": 2,
+	"manifest_version": 3,
 	"author": "Evan O'Brien",
-	"browser_action": {
+	"action": {
 		"default_title": "scrollbar_block"
 	},
 	"content_scripts": [
