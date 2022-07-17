@@ -32,6 +32,7 @@ function unhide() {
 }
 
 function initialize() {
+	vidCont = document.querySelector('video');
 	if(vidCont != null) {
 		vidCont.addEventListener('mouseover', hideTime);
 		vidCont.addEventListener('mouseout', unhide);
