@@ -31,10 +31,14 @@ function unhide() {
 	hideDone = false;
 }
 
-if(vidCont != null) {
-	vidCont.addEventListener('mouseover', hideTime);
-	vidCont.addEventListener('mouseout', unhide);
-	vidCont.addEventListener('mousemove', hideTime);
-} 
+function initialize() {
+	if(vidCont != null) {
+		vidCont.addEventListener('mouseover', hideTime);
+		vidCont.addEventListener('mouseout', unhide);
+		vidCont.addEventListener('mousemove', hideTime);
+	}
+}
+
+setInterval(initialize, 800);
 
 
